@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+  font-size: 10px;
+}
+body{
+  background-color: #cfdee0;;
+}
+.btn-wrapper{
+  width: 100%;
+  height: 100vh;
+}
+
+.btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 25rem;
+  height: 7rem;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  border: none ;
+  outline: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 3rem  rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.btn:hover .text1{
+  top: -100%;
+}
+.btn:hover .text2{
+  top: 50%;
+}
+span{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.btn .text1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
+
+}
+
+.btn .text2 {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
+
+}

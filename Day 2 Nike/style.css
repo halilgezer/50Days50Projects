@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+html{
+  font-size: 10px;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626 ;
+}
+
+.container .card-wrapper{
+  width: 50rem;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.card {
+  width: 30rem;
+  height: 55rem;
+  background-color: #EEEEEE;
+  border-radius: 2.5rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.card-top{
+  background-color: #F1AE04;
+  height: 50% ;
+  width: 100%;
+  padding: 3rem 3rem 3rem 3rem;
+  position: relative;
+  transition: all 0.4s
+}
+
+.container.change .card-top{
+  background-color: #d35246;
+}
+.card-top .logo{
+  width: 8rem;
+  height: auto;
+
+}
+.card-top h1{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+.card-top p{
+  font-size: 1rem;
+  color: white;
+}
+.card-top .shoe1{
+  width: 30rem;
+  position: absolute;
+  top:-1rem ;
+  right: -5rem;
+  transition: all 1s;
+  /*display: none;*/
+}
+.container.change .shoe1{
+  transform: translateX(-50rem) rotateZ(45deg);
+}
+
+
+.card-top .shoe2{
+  width: 33rem;
+  height: 33rem;
+  position: absolute;
+  top:-4rem ;
+  right: -48rem;
+  transition: all 1s;
+  
+}
+.container.change .card-top .shoe2{
+  transform:  translateX(-42rem) rotateZ(-20deg) ;
+  
+ 
+}
+
+.card-bottom{
+  background-color: #EEEEEE;
+  height: 50% ;
+  width: 100%;
+  padding: 3rem 2rem 3rem 2rem;
+  
+}
+.card-bottom h1{
+ color: #333;
+ font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.card-bottom h1 span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #7BE4BC;
+  letter-spacing: 0.05rem;
+  margin-left: 2rem;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+ }
+.card-bottom h3{
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.card-bottom .stars i:last-child {
+  opacity: 0.5;
+}
+
+.card-bottom .size { /*ul li de var */
+  margin-top: 3rem;
+ 
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+}
+.size ul {
+  margin-top: 1.3rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 7rem;
+}
+.size ul li {
+  font-size: 1.3rem;
+}
+
+.size ul li:nth-child(3){
+ width: 2rem;
+ height: 2rem;
+  background-color: #7BE4BC;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.card-bottom .size h2{
+  color: #333;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.card-bottom footer{
+  position: relative;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .color{
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  padding-bottom: 2rem;
+  position: relative;
+
+  
+
+}
+.footer .color .color1{
+ 
+  width: 2rem;
+  height: 2rem;
+  background-color:#1C4679 ;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  left: 0rem;
+
+}
+.footer .color .color2{
+  width: 2rem;
+  height: 2rem;
+  background-color:#CC415B ;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+.footer .price{
+  width: 16rem;
+  height: 4rem;
+  color: white;
+  font-size: 2rem;
+  background-color: #1C477A;
+  position: absolute;
+  right: -3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 4rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.8;
+}
+.container.change .footer .price{
+  background-color: #c02244;
+}
+.footer .price span {
+
+  font-weight: 700;
+}

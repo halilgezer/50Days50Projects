@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif ;
+}
+html{
+  font-size: 10px;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(53, 82, 66, 0.5),rgba(47, 80, 63, 0.6)), url(images/bg.jpg) center no-repeat;
+}
+.container .home-page{
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.home-page h1{
+  font-size: 8rem;
+  color: #ddd;
+  margin-bottom: 30px;
+  font-weight: 300;
+  animation: to-left 1.5s 0.4s ;
+}
+.home-page h1 span{
+  font-weight: 700;
+  color: #fff;
+}
+.home-page p{
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: #ddd;
+  animation: to-right 1.5s 0.4s ;
+}
+
+.button {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  width: 18rem;
+  height: 5rem;
+  border: 2px solid #eeeeee;
+  border-radius: 5rem;
+}
+.btn1 {
+  margin-right: 30px;
+  animation: show-btn 1s 1.7s ;
+  animation-fill-mode: backwards;
+  
+}
+.btn2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  animation: show-btn 1s 2.2s ;
+  animation-fill-mode: backwards;
+}
+
+@keyframes to-left {
+  from {transform: translateX(160px);
+        opacity: 0;
+ }
+  to { transform: translateX(0px);
+      opacity: 1;    
+  }
+      
+}
+@keyframes to-right {
+  from {transform: translateX(-160px);
+        opacity: 0;
+ }
+  to { transform: translateX(0px);
+      opacity: 1;    
+  }
+      
+}
+
+@keyframes show-btn {
+  0%{
+    opacity: 0 ;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
